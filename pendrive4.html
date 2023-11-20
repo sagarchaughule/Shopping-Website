@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF8">
+    <title>pendrive4</title>
+    <script src="zoom.js" type="application/javascript"></script>
+   <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">-->
+    <style>
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        .wrapper {
+            height: 400px;
+            width: 2px;
+            margin-top:10px;
+            margin-left: 0px;
+            display: flex;
+        }
+        .imageblock {
+            height: 15px;
+            width: 699px;
+            margin-left: 0px;
+            margin-top: -250px;
+        }
+        .settings {
+            height: 150px;
+            width: 800px;
+        }
+
+        .settings__button {
+            display: block;
+            width: 120px;
+            margin-bottom: 5px;
+        }
+        .setting__inputset {
+            width: 500px;
+        }
+        .setting__inputset__fieldset {
+            border: 0;
+            margin-top: -15px;
+        }
+        #container {
+            margin-top: 200px;
+        }
+
+        #container.onehundredpercent {
+            width: 350px;
+            height: 250px;
+        }
+
+        #container.onehundredpercent img {
+            max-width: 100%;
+        }
+<!--css code for dropdown-->
+
+        .dropdown{
+ position:relative;
+ display:inline-block;
+ }
+ .dropdown-content{
+ display:none;
+ position:absolute;
+ background-color:white;
+ min-width:120px;
+ box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+ padding:12px 16px;
+ color:black;
+ z-index:1;
+ }
+ .dropdown:hover .dropdown-content{
+ display:block;
+ }
+
+.checked{
+   color:orange;
+}
+
+<!--end of css code for dropdown-->
+
+    </style>
+</head>
+<body >
+
+<!--code for dropdown-->
+<table border = "0" width="100%"  bgcolor="#2874F0"  >
+<tr>
+<td align="right" ><h1><font style="color: white"><i><b>Sagar<font color="yellow"> C.</font></b></i></h1></font></td>
+<td><input type="text" placeholder="search for products,brands and more"
+style="width:550px;height:25px;">
+<input type = "button" value= "&emsp;search&emsp;"style="width=95px;height:30px;">
+</td>
+<th ><a style="text-decoration: none;"  href=login.html><font color="white">Login & signup</font></a></th>
+<th><font color ="white">More</font></th>
+<td align="center"><h1 style="color: white;"><i class=" fa fa-shopping-cart"></i> Cart</h1></td>
+</tr>
+</table>
+
+<table border = "0" width="100%" bgcolor="white" height="55px">
+<tr>
+<th width="12.5%">
+<div class="dropdown"> 
+<span>Electronics</span>
+<div class= "dropdown-content">
+<p align="left">Cameras And Accessories</p>
+<p align="left">laptops</p>
+<p align="left">mobiles</p>
+<p align="left">tablets</p>
+<p align="left">Bluetooth Speakers</p>
+<p align="left">Home Theater</p>
+</div>
+</div>
+</th>
+<th width="12.5%">
+<div class="dropdown"> 
+<span> TVs&appliances </span>
+<div class= "dropdown-content">
+ <p align="left">Smart TVs</p>
+<p align="left">Big Scree TVs</p>
+<p align="left">Kitchen Appliences</p>
+<p align="left">4K UHD TVs</p>
+<p align="left">Home Appliences</p>
+<p align="left">Refrigerators</p>
+</div>
+</div>
+</th>
+
+
+<th width="12.5%"> 
+<div class="dropdown"> 
+<span>Men</span>
+<div class= "dropdown-content">
+ <p align="left">T-Shirts</p>
+<p align="left">Formal Shirts</p>
+<p align="left">Casual Shirts</p>
+<p align="left">Jeans</p>
+<p align="left">Track Pants</p>
+<p align="left">Formal Trousers</p>
+</div>
+</div>
+</th>
+
+
+
+<th width="10.5%">
+<div class="dropdown"> 
+ <span>Women</span>
+<div class= "dropdown-content">
+ <p align="left">Sarees</p>
+<p align="left">Kurtas and Kurtis</p>
+<p align="left">Gowns</p>
+<p align="left">Dress Material</p>
+<p align="left">Blouse</p>
+<p align="left">Dupattas</p>
+</div>
+</div>
+</th>
+
+
+<th width="12.5%"> 
+<div class="dropdown"> 
+<span>Baby&kids </span> 
+<div class= "dropdown-content">
+ <p align="left">Sandals</p>
+<p align="left">Kids Watches</p>
+<p align="left">Kids Sunglasses</p>
+<p align="left">Outdoor Toys</p>
+<p align="left">Musical Toys</p>
+<p align="left">Educational Toys</p>
+</div>
+</div>
+</th>
+
+
+<th width="12.5%">
+<div class="dropdown">  
+<span> Home&furniture </span>
+<div class= "dropdown-content">
+ <p align="left">Beds</p>
+<p align="left">Mattresses</p>
+<p align="left">Sofa</p>
+<p align="left">Dining Tables & chairs</p>
+<p align="left">Bedsheets</p>
+<p align="left">Shoe Racks</p>
+</div>
+</div>
+</th>
+
+
+<th width="12.5%">
+<div class="dropdown">  
+<span>Sports,Books & More </span>
+<div class= "dropdown-content">
+ <p align="left">Sports shoes</p>
+<p align="left">All Suppliments</p>
+<p align="left">protein suppliments</p>
+<p align="left">Enterance Exam Books</p>
+<p align="left"> Literature And Fiction</p>
+<p align="left"> Self Help Books</p>
+<p align="left">Helmets And Riding Gears</p>
+<p align="left">Industrial Testing Devices</p>
+<p align="left">Vehicle Lubricants</p>
+</div>
+</div>
+</th>
+
+
+<th width="15.5%">
+<div class="dropdown">  
+ <span>offer zone </span>
+<div class= "dropdown-content">
+ <p align="left">Microphones( Extra 5% off)</p>
+<p align="left">Personal Care Essentials(Min 20% +Extra 5% off)</p>
+<p align="left">Sports and Fitness(upto 70%off)</p>
+<p align="left">Perfumes And Deos(upto 50% off)</p>
+<p align="left"> Power And Hand Tools(From  ₹299)</p>
+<p align="left"> Jwellery sets(10% off)</p>
+</div>
+</div>
+</th>
+
+</tr>
+</table>
+
+
+<!--end of code for dropdown-->
+
+
+
+
+<br>
+<br>
+<table border="0" width="100%">
+<tr>
+<td width="30%" >
+
+    <p id="zoomOptions">zoom</p>
+<div class="wrapper">
+ 
+    <div class="imageblock">
+        <div id="container"></div>
+    </div>
+</div>
+
+
+
+
+
+</td>
+<td width="50%"><b><font size="4">SanDisk Ultra Dual Drive Go Type C Pendrive for<br> Mobile <br>64GB, 5Y - SDDDC3-064G-I35 
+</font></b>
+<br>
+<br>
+<font color="green">special offer</font>
+<br>
+Price:	<font size="4"><b>₹1550.00</b></font> <SPAN STYLE="text-decoration:line-through"><font color="gray">	₹2200.00</font></SPAN> <font color="green">60% off</font><br>
+<span class = "fa fa-star checked"></span>
+<span class = "fa fa-star checked"></span>
+<span class = "fa fa-star checked"></span>
+<span class = "fa fa-star checked"></span>
+<span class = "fa fa-star "></span>
+<br>
+
+<ul>
+
+<li><font size="3">Free up space on your OTG-enabled Android phone</li>
+<li>Back up your mobile photos, videos and contacts <br>
+    computers with ease</li>
+<li>Protect your private files with included SanDisk SecureAccess<br> software</li>
+<li>Includes added protection of secure online backup (up to 2GB <br>optionally available) offered by YuuWaa</li>
+<li>Retractable design with dual micro-USB and USB 3.0 connectors</li>
+<li>SanDisk Memory Zone application (available on Google Play) lets <br>you easily manage your photos and videos
+5 years limited warranty</font></li>
+
+</ul>
+<br>
+<input type= "button" value="&emsp;&emsp;Add To Cart&emsp;&emsp;"
+ style="background-color:orange;color:white;width= 250%;height:40px;font size=17px;" >
+ <a href="buy.html"><input type= "button" value="&emsp;&emsp;Buy Now&emsp;&emsp;" 
+    style="background-color:green;color:white;height:40px;font size=17px;" ></a>
+
+
+</td>
+
+
+
+</tr>
+</table>
+
+
+
+<!--code for footer-->
+<table border="0" width="100%" bgcolor="#2874F0">
+
+<tr>
+<td bgcolor="black" width="25%"><font color="white"><b>Quick links</b></font></td>
+<td bgcolor="black" width="25%"><font color="white"><b>Follow us</b></font></td>
+<td bgcolor="black" width="25%"><font color="white"><b>Contact Us</b></font></td>
+<td bgcolor="black" width="25%"><font color="white"><b>Search</b></font></td>
+</tr>
+
+<tr>
+<td>
+<ul>
+<li><font color="white">Electronics</font></li>
+<li><font color="white">TVs & Appliances</font></li>
+<li><font color="white">Men</font></li>
+<li><font color="white">Women</font></li>
+</ul>
+
+<td>
+<ul>
+<li><font color="white">Facebook</font></li>
+<li><font color="white">Twitter</font></li>
+<li><font color="white">Instagram</font></li>
+<li><font color="white">Youtube</font></li>
+</ul>
+
+<td>
+<ul>
+<li><font color="white">Sagar C</font></li>
+<li><font color="white">+91 7263809887</font></li>
+<li><font color="white">India</font></li>
+<li><font color="white">415709</font></li>
+</ul>
+<td>
+<input type ="text" placeholder="Search">
+<input type ="Button" value="Search">
+</td>
+
+
+
+</table>
+<!--end of code for footer-->
+
+
+
+
+
+
+<script>
+    var currentImage = 1;
+    var defaultOptions = {
+        width: 450,
+        height: 450,
+        zoomWidth: 100 ,
+        
+        img: "pendrive4.jfif",
+        offset: {vertical: 0, horizontal: 10}
+    };
+    var options;
+    resetOptions();
+
+    var container = document.getElementById('container');
+    var optionsHeader = document.getElementById('zoomOptions');
+    var killButton = document.getElementById('kill');
+    var setupButton = document.getElementById('setup');
+    var resetButton = document.getElementById('reset');
+    optionsHeader.innerHTML = ' ' + JSON.stringify();
+    window.imageZoom = new ImageZoom(container, options);
+
+    function resetOptions() {
+        options = JSON.parse(JSON.stringify(defaultOptions)); 
+    }
+
+    function updateButtonStatus() {
+        if (window.imageZoom) {
+            killButton.disabled = false;
+            resetButton.disabled = false;
+            setupButton.disabled = true;
+        } else {
+            killButton.disabled = true;
+            resetButton.disabled = true;
+            setupButton.disabled = false;
+        }
+
+    }
+
+   
+
+    function setupImageZoom(imageZoom) {
+        window[imageZoom]= new ImageZoom(container, options);
+        updateButtonStatus();
+
+    }
+
+    function resetImageZoom(imageZoom) {
+        window[imageZoom].kill();
+        window[imageZoom]= new ImageZoom(container, options);
+    }
+
+    function changeScale() {
+        var scale = document.querySelector('input[name = "Scale"]:checked').value;
+        if (scale > 0) {
+            options.scale = scale;
+        } else {
+            delete options.scale;
+        }
+        optionsHeader.innerHTML = 'Options: ' + JSON.stringify(options);
+        killImageZoom('imageZoom');
+        window.imageZoom = new ImageZoom(container, options);
+        updateButtonStatus();
+    }
+
+    function changeZoomPosition() {
+        var zoomPosition = document.querySelector('input[name = "ZoomPosition"]:checked').value;
+        if (zoomPosition !== 'default') {
+            options.zoomPosition = zoomPosition;
+        } else {
+            delete options.zoomPosition;
+        }
+        optionsHeader.innerHTML = 'Options: ' + JSON.stringify(options);
+        killImageZoom('imageZoom');
+        window.imageZoom = new ImageZoom(container, options);
+        updateButtonStatus();
+    }
+
+    function changeFillContainerSetting() {
+        var fillContainer = document.querySelector('input[name="FillContainer"]').checked;
+        if (fillContainer === true) {
+            document.getElementById('container').classList.add('onehundredpercent');
+            delete options.width;
+            delete options.height;
+            delete options.zoomWidth;
+            
+        } else {
+            document.getElementById('container').classList.remove('onehundredpercent');
+            resetOptions();
+        }
+        optionsHeader.innerHTML = 'Options: ' + JSON.stringify(options);
+        resetImageZoom('imageZoom');
+    }
+
+    function changeImage(imageZoom) {
+        currentImage = currentImage === 1 ? 2 : 1;
+        options.img = currentImage + '.jpg';
+        resetImageZoom(imageZoom);
+    }
+</script>
+</body>
+</html>

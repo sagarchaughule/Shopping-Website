@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+
+<!--font awesome icon library-->
+<link rel = "stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+<!-- css code for search box searching-->
+.dropbtn{
+            padding : 16px;
+            font-size: 16px;
+            border: none;
+            cursor : pointer;
+
+        }
+        #myInput{
+            box-sizing: border-box;
+            background-position: 14px 12px;
+            background-repeat: no-repeat;
+            font-size: 16px;
+            padding: 14px 20px 12px 45px;
+            border: 2px solid #ddd;
+        }
+        #myinput:focus{
+            outline : 7px solid #ddd;
+
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-contents{
+            display: none;
+            position: absolute;
+            background-color: #f6f6f6;
+            width: 551px;
+            overflow: auto;
+            border: 0;
+            z-index: 1;
+        }
+        .dropdown-contents a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+
+        }
+        .dropdown a:hover{
+            background-color: #ddd;
+
+        }
+        .show{
+            display: block;
+        }
+
+<!--end of css code for search box searching-->
+
+		.container{
+			height:auto;
+			width:20%;
+			overflow:hidden;
+			
+			
+		}
+		.container img{
+			width:100%;
+			display:block;
+			transition:transform 2s;
+		}
+		.container:hover img{
+			transform:scale(1.3);
+		}
+
+
+
+
+<!--css code for slider-->
+
+
+#slider{
+	 overflow:hidden;
+	 }
+	 #slider figure{
+	 position:relative;
+	 width:500%;
+	 margin:0;
+	 left:0;
+	 animation:10s slider infinite;
+	 }
+	 #slider figure img{
+	 float:left;
+	 width:20%;
+	 }
+	 @keyframes slider{
+	    0%{
+		   left : 0;
+		}
+		20%{
+		    left : 0;
+		}
+		25%{
+		    left: -100%;
+		}
+		45%{
+			left: -100%;
+		}
+		50%{
+			left: -200%;
+		}
+		70%{
+			left: -200%;
+		}
+		75%{
+			left: -300%;
+		}
+		95%{
+			left:-300%;
+		}
+		100%{
+			left:-400%;
+		}
+	 }
+	 
+
+
+
+
+<!--end of css code for slider-->
+ 
+
+
+
+
+
+
+<!--css code for raring-->
+
+.checked{
+   color:orange;
+  }
+<!-- end of css code for rating-->
+ .dropdown{
+ position:relative;
+ display:inline-block;
+ }
+ .dropdown-content{
+ display:none;
+ position:absolute;
+ background-color:white;
+ min-width:120px;
+ box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+ padding:12px 16px;
+ color:black;
+ z-index:1;
+ 
+ }
+ .dropdown:hover .dropdown-content{
+ display:block;
+ }
+ 
+ 
+ 
+ 
+ 
+</style>
+
+
+<title>flipshop</title>
+</head>
+
+<body bgcolor="#F1F3F6">
+<table border = "0" width="100%"  bgcolor="#2874F0"  >
+<tr>
+<td align="right" ><h1><font style="color: white"><i><b>Sagar<font color="yellow"> C.</font></b></i></h1></font></td>
+
+<!--code for search box-->
+<td class="dropdown" style="margin-top: 23px;"  ><input type="text" onclick="myFunction()" class ="dropbtn"  placeholder="search for products,brands and more..." 
+	id="myInput" onekeyup= "filterFunction()" style="width:550px;height:25px;" >
+	<div id="myDropdown" class="dropdown-contents">
+		<a href="earring2.html">memoir</a>
+		<a href="bag1.html">safari</a>
+		<a href="earphone2.html">zebronics</a>
+		<a href="mobile1.html">vivo Y21</a>
+		<a href="teddy1.html">AVS Teddy Bear </a>
+
+	</div>
+    <input type = "button" value= " &emsp;search&emsp;"style="width=95px;height:30px; " >
+
+<!--end of code for search box-->
+<th ><a style="text-decoration: none;"  href=login.html><font color="white">Login & signup</font></a></th>
+<th><font color ="white">More</font></th>
+<td align="center"><h1 style="color: white;"><i class=" fa fa-shopping-cart"></i> Cart</h1></td>
+</tr>
+</table>
+
+<table border = "0" width="100%" bgcolor="white" height="55px">
+<tr>
+<th width="12.5%">
+<div class="dropdown"> 
+<span>Electronics</span>
+<div class= "dropdown-content">
+<p align="left">Cameras And Accessories</p>
+<p align="left">laptops</p>
+<p align="left">mobiles</p>
+<p align="left">tablets</p>
+<p align="left">Bluetooth Speakers</p>
+<p align="left">Home Theater</p>
+</div>
+</div>
+</th>
+<th width="12.5%">
+<div class="dropdown"> 
+<span> TVs&appliances </span>
+<div class= "dropdown-content">
+ <p align="left">Smart TVs</p>
+<p align="left">Big Scree TVs</p>
+<p align="left">Kitchen Appliences</p>
+<p align="left">4K UHD TVs</p>
+<p align="left">Home Appliences</p>
+<p align="left">Refrigerators</p>
+</div>
+</div>
+</th>
+
+
+<th width="12.5%"> 
+<div class="dropdown"> 
+<span>Men</span>
+<div class= "dropdown-content">
+ <p align="left">T-Shirts</p>
+<p align="left">Formal Shirts</p>
+<p align="left">Casual Shirts</p>
+<p align="left">Jeans</p>
+<p align="left">Track Pants</p>
+<p align="left">Formal Trousers</p>
+</div>
+</div>
+</th>
+
+
+
+<th width="10.5%">
+<div class="dropdown"> 
+ <span>Women</span>
+<div class= "dropdown-content">
+ <p align="left">Sarees</p>
+<p align="left">Kurtas and Kurtis</p>
+<p align="left">Gowns</p>
+<p align="left">Dress Material</p>
+<p align="left">Blouse</p>
+<p align="left">Dupattas</p>
+</div>
+</div>
+</th>
+
+
+<th width="12.5%"> 
+<div class="dropdown"> 
+<span>Baby&kids </span> 
+<div class= "dropdown-content">
+ <p align="left">Sandals</p>
+<p align="left">Kids Watches</p>
+<p align="left">Kids Sunglasses</p>
+<p align="left">Outdoor Toys</p>
+<p align="left">Musical Toys</p>
+<p align="left">Educational Toys</p>
+</div>
+</div>
+</th>
+
+
+<th width="12.5%">
+<div class="dropdown">  
+<span> Home&furniture </span>
+<div class= "dropdown-content">
+ <p align="left">Beds</p>
+<p align="left">Mattresses</p>
+<p align="left">Sofa</p>
+<p align="left">Dining Tables & chairs</p>
+<p align="left">Bedsheets</p>
+<p align="left">Shoe Racks</p>
+</div>
+</div>
+</th>
+
+
+<th width="12.5%">
+<div class="dropdown">  
+<span>Sports,Books & More </span>
+<div class= "dropdown-content">
+ <p align="left">Sports shoes</p>
+<p align="left">All Suppliments</p>
+<p align="left">protein suppliments</p>
+<p align="left">Enterance Exam Books</p>
+<p align="left"> Literature And Fiction</p>
+<p align="left"> Self Help Books</p>
+<p align="left">Helmets And Riding Gears</p>
+<p align="left">Industrial Testing Devices</p>
+<p align="left">Vehicle Lubricants</p>
+</div>
+</div>
+</th>
+
+
+<th width="15.5%">
+<div class="dropdown">  
+ <span>offer zone </span>
+<div class= "dropdown-content">
+ <p align="left">Microphones( Extra 5% off)</p>
+<p align="left">Personal Care Essentials(Min 20% +Extra 5% off)</p>
+<p align="left">Sports and Fitness(upto 70%off)</p>
+<p align="left">Perfumes And Deos(upto 50% off)</p>
+<p align="left"> Power And Hand Tools(From  ?299)</p>
+<p align="left"> Jwellery sets(10% off)</p>
+</div>
+</div>
+</th>
+
+</tr>
+</table>
+
+
+
+<div id ="slider">
+	  <figure>
+	        <img src ="banner1.png">
+			<img src ="banner2.png">
+			<img src ="banner3.png">
+			<img src ="banner4.png">
+			<img src ="banner1.png">
+			
+	  </figure>
+	  </div>
+
+
+
+
+<!--<img src="banner4.png"width="100%" height="230">-->
+
+<br><br>
+<table border = "0" width="100%"  bgcolor="white"  >
+<tr>
+<td colspan="5"><h2>Deals Of The Day :</h2><p id="demo" style = "color:red;
+ font-size: 22px; margin-top: -45px;margin-left: 220px;"></p>
+ <p style="font-size: 22px; margin-top: -50px;margin-left: 410px;">left</p>
+ <hr></td>
+<tr>	
+<tr>
+<td colspan="5"><h2>Earrings</h2></td>
+<tr>
+<th class="container"><img src="ssear1.png"width="75%" style="width: 25;height: 25;"></th>
+<th class="container"><img src="ssear2.jpg"width="75%"></th>
+<th class="container"><img src="ssear3.jpg"width="75%"></th>
+<th class="container"><img src="ssear4.jpg"width="75%"></th>
+<th class="container"><img src="ssear5.png"width="75%"></th>
+
+</tr>
+
+<tr>
+<th> <font color="Black"> Zaveri Pearls Gold</font></th>
+<th><font color="Black">Memoir</font></th>
+<th><font color="Black"> MEENAZ</font></th>
+<th><font color="Black"> Candere By Kalyan Jewellers</font></th>
+<th><font color="Black">ORIONZ</font></th>
+</tr>
+
+<tr>
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked"></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+<th>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star  checked" style="color:orange;"></span>
+</th>
+</tr>
+
+<tr>
+<th>Price: <font color="green"> 15,599/- </font></th>
+<th>Price:<font color="green"> 20,699/- </font></th>
+<th>Price:<font color="green"> 25,499/- </font></th>
+<th>Price:<font color="green"> 28,399/- </font></th>
+<th>Price:<font color="green"> 30,750/- </font></th>
+</tr>
+
+<tr>
+<th><a href="earring1.html"><input type="button" value= "show details" style=
+"width:150px;height = 35px;background-color:blue;color:white;" ><a></th>
+
+<th><a href="earring2.html"><input type="button" value= "show details" style=
+"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+<th><a href="earring3.html"><input type="button" value= "show details" style=
+	"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+	<th><a href="earring4.html"><input type="button" value= "show details" style=
+		"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+	
+
+	<th><a href="earring5.html"><input type="button" value= "show details" style=
+	"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+</tr>
+
+</table>
+<br>
+
+
+<table border = "0" width="100%"  bgcolor="white"  >
+<tr>
+<td colspan="5"><h2>School Bags</h2><hr></td>
+<tr>
+<th class="container"><img src="olbag11.jpg"width="75%"></th>
+<th class="container"><img src="ssbag2.jpg"width="75%"></th>
+<th class="container"><img src="ssbag3.jpg"width="75%"></th>
+<th class="container"><img src="sssbag4.jpg"width="75%"></th>
+<th class="container"><img src="ssbag5.jpg"width="75%"></th>
+</tr>
+<tr>
+<th> <font color="Black"> Safari</font></th>
+<th><font color="Black">SASSIE</font></th>
+<th><font color="Black"> Priority</font></th>
+<th><font color="Black"> POLESTAR</font></th>
+<th><font color="Black">AUXTER</font></th>
+</tr>
+
+
+<tr>
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked"></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star  checked" style="color:orange;"></span>
+</th>
+</tr>
+
+<tr>
+<th>Price: <font color="green">  599/-</font></th>
+<th>Price:<font color="green"> 699/-</font></th>
+<th>Price:<font color="green"> 499/-</font></th>
+<th>Price:<font color="green"> 399/-</font></th>
+<th>Price:<font color="green"> 750/-</font></th>
+</tr>
+
+<tr>
+<th><a href="bag1.html"><input type="button" value= "show details" style=
+"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+<th><a href="bag2.html"><input type="button" value= "show details" style=
+	"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+	<th><a href="bag3.html"><input type="button" value= "show details" style=
+		"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+		<th><a href="bag4.html"><input type="button" value= "show details" style=
+			"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+			<th><a href="bag5.html"><input type="button" value= "show details" style=
+				"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+</tr>
+
+
+
+</table>
+
+<br>
+<table border = "0" width="100%"  bgcolor="white"  >
+<tr>
+<td colspan="5"><h2>Earphones</h2><hr></td>
+<tr>
+<th class="container"><img src="e11.jpg"width="75%"></th>
+<th class="container"><img src="e22.jpg"width="75%"></th>
+<th class="container"><img src="e33.jpg"width="75%"></th>
+<th class="container"><img src="e44.jpg"width="75%"></th>
+<th class="container"><img src="e55.jpg"width="75%"></th>
+</tr>
+
+<tr>
+<th> <font color="Black"> Apple</font></th>
+<th><font color="Black">Zebronics</font></th>
+<th><font color="Black">JBL </font></th>
+<th><font color="Black"> PTron</font></th>
+<th><font color="Black">Realme</font></th>
+</tr>
+
+
+
+<tr>
+<tr>
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked"></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star  checked" style="color:orange;"></span>
+</th>
+</tr>
+
+
+<tr>
+<th>Price: <font color="green">  500/-</font></th>
+<th>Price:<font color="green"> 550/-</font></th>
+<th>Price:<font color="green"> 650/-</font></th>
+<th>Price:<font color="green"> 800/-</font></th>
+<th>Price:<font color="green"> 449/-</font></th>
+</tr>
+
+<tr>
+	<th><a href="earphone1.html"><input type="button" value= "show details" style=
+		"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+		<th><a href="earphone2.html"><input type="button" value= "show details" style=
+			"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+			<th><a href="earphone3.html"><input type="button" value= "show details" style=
+				"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+<th><a href="earphone4.html"><input type="button" value= "show details" style=
+				"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+				<th><a href="earphone5.html"><input type="button" value= "show details" style=
+					"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+</tr>
+
+
+</table>
+
+<br>
+<table border = "0" width="100%"  bgcolor="white"  >
+<tr>
+<td colspan="5"><h2>Kitchen Appliences</h2><hr></td>
+<tr>
+<th class="container"><img src="kitchen11.jpeg"width="75%"></th>
+<th class="container"><img src="kitchen12.jpeg"width="75%"></th>
+<th class="container"><img src="kitchen13.jpeg"width="75%"></th>
+<th class="container"><img src="kitchen144.jpg"width="75%"></th>
+<th class="container"><img src="kitchen16.jpeg"width="75%"></th>
+</tr>
+<tr>
+<th> <font color="Black"> SmartBuy Induction<br> Bottom Cookware Set </font></th>
+<th><font color="Black"> CRYSTAL CLASSIC Series <br>Induction Bottom Cookware Set  </font></th>
+<th><font color="Black"> SPEACK Woman's 1st Choice Spatula <br>
+	  Spoon Steel tool set </font></th>
+<th><font color="Black">Prestige Regal 41384 750<br> Juicer Mixer Grinder </font></th>
+<th><font color="Black">JKR Enterprise JKR-2019 260 W<br> Electric Whisk  (Multicolor)</font></th>
+</tr>
+
+
+<tr>
+<tr>
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked"></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star  checked" style="color:orange;"></span>
+</th>
+</tr>
+
+
+<tr>
+<th>Price: <font color="green">  4999/-</font></th>
+<th>Price:<font color="green"> 5550/-</font></th>
+<th>Price:<font color="green"> 5999/-</font></th>
+<th>Price:<font color="green"> 8000/-</font></th>
+<th>Price:<font color="green"> 1999/-</font></th>
+</tr>
+
+<tr>
+	<th><a href="kitchen1.html"><input type="button" value= "show details" style=
+		"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+<th><a href="kitchen2.html"><input type="button" value= "show details" style=
+			"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+<th><a href="kitchen3.html"><input type="button" value= "show details" style=
+				"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+<th><a href="kitchen4.html"><input type="button" value= "show details" style=
+					"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+					<th><a href="kitchen5.html"><input type="button" value= "show details" style=
+						"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+</tr>
+
+</table>
+
+<br>
+<table border = "0" width="100%"  bgcolor="white"  >
+<tr>
+<td colspan="5"><h2>Mobile</h2><hr></td>
+<tr>
+<th class="container"><img src="m11.webp"width="75%"></th>
+<th class="container"><img src="m22.webp"width="75%"></th>
+<th class="container"><img src="m33.webp"width="75%"></th>
+<th class="container"><img src="m44.webp"width="75%"></th>
+<th class="container"><img src="m55.webp"width="75%"></th>
+</tr>
+
+<tr>
+<th> <font color="Black">Vivo Y21 </font></th>
+<th><font color="Black">Samsung J7</font></th>
+<th><font color="Black"> Redmi 9</font></th>
+<th><font color="Black">Oppo Reno2 </font></th>
+<th><font color="Black">Realmi Note4</font></th>
+</tr>
+
+
+
+<tr>
+<tr>
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked"></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star  checked" style="color:orange;"></span>
+</th>
+</tr>
+
+
+
+<tr>
+<th>Price: <font color="green">  9,999/-</font></th>
+<th>Price:<font color="green"> 17,550/-</font></th>
+<th>Price:<font color="green"> 500/-</font></th>
+<th>Price:<font color="green"> 12,499/-</font></th>
+<th>Price:<font color="green"> 20,750/-</font></th>
+</tr>
+
+<tr>
+	<th><a href="mobile1.html"><input type="button" value= "show details" style=
+		"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+		<th><a href="mobile2.html"><input type="button" value= "show details" style=
+			"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+			<th><a href="mobile3.html"><input type="button" value= "show details" style=
+				"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+				<th><a href="mobile4.html"><input type="button" value= "show details" style=
+					"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+					<th><a href="mobile5.html"><input type="button" value= "show details" style=
+						"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+</tr>
+
+
+</table>
+
+<br>
+<table border = "0" width="100%"  bgcolor="white"  >
+<tr>
+<td colspan="5"><h2>Pendrives</h2><hr></td>
+<tr>
+<th class="container"><img src="pendrive1.jfif"width="75%"></th>
+<th class="container"><img src="pendrive2.jfif"width="75%"></th>
+<th class="container"><img src="pendrive3.jfif"width="75%"></th>
+<th class="container"><img src="pendrive4.jfif"width="75%"></th>
+<th class="container"><img src="pendrive5.jfif"width="75%"></th>
+</tr>
+<tr>
+<th> <font color="Black"> Sandisk 8GB</font></th>
+<th><font color="Black">SanDisk Ultra Dual<br> 32GB USB 3.0 OTG Pen Drive</font></th>
+<th><font color="Black"> Sandisk</font></th>
+<th><font color="Black">SanDisk Ultra Dual Drive<br> Go Type C Pendrive for Mobile <br>64GB, 5Y - SDDDC3-064G-I35 </font></th>
+<th><font color="Black">USB 3.1 Flash Drive 32GB x740w</font></th>
+</tr>
+
+
+
+<tr>
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked"></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star  checked" style="color:orange;"></span>
+</th>
+</tr>
+
+
+<tr>
+<th>Price: <font color="green">  899/-</font></th>
+<th>Price:<font color="green"> 999/-</font></th>
+<th>Price:<font color="green"> 750/-</font></th>
+<th>Price:<font color="green"> 1,550/-</font></th>
+<th>Price:<font color="green"> 799/-</font></th>
+</tr>
+
+<tr>
+	<th><a href="pendrive1.html"><input type="button" value= "show details" style=
+		"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+		<th><a href="pendrive2.html"><input type="button" value= "show details" style=
+			"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+			<th><a href="pendrive3.html"><input type="button" value= "show details" style=
+				"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+				<th><a href="pendrive4.html"><input type="button" value= "show details" style=
+					"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+					<th><a href="pendrive5.html"><input type="button" value= "show details" style=
+						"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+</tr>
+
+
+</table>
+
+<br>
+<table border = "0" width="100%"  bgcolor="white"  >
+<tr>
+<td colspan="5"><h2>Teddy</h2><hr></td>
+<tr>
+<th class="container"><img src="td11.webp"width="75%"></th>
+<th class="container"><img src="td22.webp"width="75%"></th>
+<th class="container"><img src="td33.webp"width="75%"></th>
+<th class="container"><img src="td44.webp"width="75%"></th>
+<th class="container"><img src="td55.jpg"width="75%"></th>
+</tr>
+<tr>
+<th> <font color="Black"> AVS Teddy Bear Soft Toy (5 Feet, Pink)</font></th>
+<th><font color="Black">BDMP Soft Plush Fabric Stuffed Teddy Bear || pink || 6 Feet ||</font></th>
+<th><font color="Black"> VEERA SOFT TOYS 2019 Teddy Bear Soft Toy (3 Feet)</font></th>
+<th><font color="Black"> NP Toys Printed Foot Teddy Bear Stuffed Toys (3 Feet)</font></th>
+<th><font color="Black">Ziraat Soft Teddy Bear 3 feet Blue Color for Birthday Gift</font></th>
+</tr>
+
+
+<tr>
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked"></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star "></span>
+</th>
+
+<th>
+<span class = "fa fa-star checked " style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star checked" style="color:orange;"></span>
+<span class = "fa fa-star  checked" style="color:orange;"></span>
+</th>
+</tr>
+
+
+<tr>
+<th>Price: <font color="green">  950/-</font></th>
+<th>Price:<font color="green"> 1,55,250/-</font></th>
+<th>Price:<font color="green"> 1,500/-</font></th>
+<th>Price:<font color="green"> 2000/-</font></th>
+<th>Price:<font color="green"> 2,550/-</font></th>
+</tr>
+
+<tr>
+	<th><a href="teddy1.html"><input type="button" value= "show details" style=
+		"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+		<th><a href="teddy2.html"><input type="button" value= "show details" style=
+			"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+			<th><a href="teddy3.html"><input type="button" value= "show details" style=
+				"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+<th><a href="teddy4.html"><input type="button" value= "show details" style=
+	"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+
+	<th><a href="teddy5.html"><input type="button" value= "show details" style=
+		"width:150px;height=35px;background-color:blue;color:white;" ></a></th>
+</tr>
+
+
+</table>
+<!--code for footer-->
+<table border="0" width="100%" bgcolor="#2874F0">
+
+<tr>
+<td bgcolor="black" width="25%"><font color="white"><b>Quick links</b></font></td>
+<td bgcolor="black" width="25%"><font color="white"><b>Follow us</b></font></td>
+<td bgcolor="black" width="25%"><font color="white"><b>Contact Us</b></font></td>
+<td bgcolor="black" width="25%"><font color="white"><b>Search</b></font></td>
+</tr>
+
+<tr>
+<td>
+<ul>
+<li><font color="white">Electronics</font></li>
+<li><font color="white">TVs & Appliances</font></li>
+<li><font color="white">Men</font></li>
+<li><font color="white">Women</font></li>
+</ul>
+
+<td>
+<ul>
+<li><font color="white">Facebook</font></li>
+<li><font color="white">Twitter</font></li>
+<li><font color="white">Instagram</font></li>
+<li><font color="white">Youtube</font></li>
+</ul>
+
+<td>
+<ul>
+<li><font color="white">Sagar C</font></li>
+<li><font color="white">+91 7263809887</font></li>
+<li><font color="white">India</font></li>
+<li><font color="white">415709</font></li>
+</ul>
+<td>
+<input type ="text" placeholder="Search">
+<input type ="Button" value="Search">
+</td>
+
+
+
+</table>
+<!--end of code for footer-->
+
+<!-- script code for deal of the day timer-->
+<script>
+	var countDownDate = new Date ("november 30,2021 15:37:25").getTime();
+	var x = setInterval ( function(){
+		var now = new Date().getTime();
+		var distance = countDownDate -now;
+
+		var days =Math.floor(distance/(1000 * 60 *60 * 24));
+		var hours =Math.floor((distance % (1000 * 60 *60 * 24)) / (1000 *60 * 60));
+		var minutes = Math.floor((distance % (1000 *60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60))/ 1000);
+		
+		document.getElementById("demo").innerHTML = days + "d &nbsp;    " + hours + "h &nbsp;    "
+		+ minutes +"m &nbsp;    " + seconds + "s &nbsp;    ";
+
+		if(distance < 0){
+			clearInterval(x);
+			document.getElementById("demo").innerHTML="EXPIRED";
+
+		}
+
+
+
+	},1000);
+</script>
+<!-- end of script code for deal of the day timer-->
+<!--script code for serch box-->
+
+<script>
+	 function myFunction(){
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        function filterFunction(){
+            var input,filter, ul, li, a  ,i ;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div= document.getElementById("myDropdown");
+            a= div.getElementByTagName("a");
+            for (i=0; i<a.length; i++){
+                txtValue= a[i].textContent || a[i].innerText;
+                if(txtValue.toUpperCase().indexof(filter)> -1){
+                    a[i].style.display = "";
+                }else{
+                    a[i].style.display = "none";
+                }
+            }
+        }
+</script>
+
+
+<!--end of serch code for serch box-->
+
+</body>
+</html>

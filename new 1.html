@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1146655618792427"
+        crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <title>Dashboard <h5 style="color:red" class="text-center ">NORMAL ID</h5> | Data Hub</title>
+    <meta content="Admin Dashboard" name="description">
+    <meta content="Themesbrand" name="author">
+    <link rel="shortcut icon" href="https://datahubindia.tech/assets/images/logo_tra.png">
+    <link href="https://datahubindia.tech/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://datahubindia.tech/assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+    <link href="https://datahubindia.tech/assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="https://datahubindia.tech/assets/css/style.css" rel="stylesheet" type="text/css">
+    <!-- DataTables -->
+    <link href="https://datahubindia.tech/assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet"
+        type="text/css">
+    <link href="https://datahubindia.tech/assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css">
+    <!-- Responsive datatable examples -->
+    <link href="https://datahubindia.tech/assets/css/toastr.css" rel="stylesheet" type="text/css">
+    <link href="https://datahubindia.tech/assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet"
+        type="text/css">
+    <script src="https://datahubindia.tech/assets/js/jquery.min.js"></script>
+    <script src="https://datahubindia.tech/assets/js/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://datahubindia.tech/assets/css/animate.min.css" />
+
+</head>
+<script>
+const BASE_URL = 'https://datahubindia.tech/';
+</script>
+
+<body
+    style="background-image: url('');""> <!-- Begin page -->
+ <div id="wrapper">
+     <!-- Top Bar Start -->
+     <div class="topbar">
+         <!-- LOGO -->
+         <div class="topbar-left"><a href="#" class="logo"><span
+                     style="color: #000000c7;">Data Hub</span><i><img
+                         src="https://datahubindia.tech/assets/images/logo_tra.png" alt="" height="43"></i></a></div>
+         <nav class="navbar-custom">
+             <ul class="navbar-right list-inline float-right mb-0">
+                 <li class="dropdown notification-list list-inline-item"><a class="nav-link waves-effect" href="#"
+                         id="btn-fullscreen">Hello
+                         sagar Chaughule</a></li>
+                 <!-- full screen -->
+                 <li class="dropdown notification-list list-inline-item d-none d-md-inline-block"><a
+                         class="nav-link waves-effect" href="#" id="btn-fullscreen"><i
+                             class="mdi mdi-fullscreen noti-icon"></i></a></li>
+                 <li class="dropdown notification-list list-inline-item">
+                     <div class="dropdown notification-list nav-pro-img">
+                         <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown"
+                             href="#" role="button" aria-haspopup="false" aria-expanded="false"><img
+                                 src="https://datahubindia.tech/assets/images/logo_tra.png" alt="user"
+                                 class="rounded-circle"></a>
+                         <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+                             <!-- item-->
+                             <!-- <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5"></i> Profile</a>
+                      <div class="dropdown-divider"></div> -->
+                             <a class="dropdown-item text-danger" href="https://datahubindia.tech/portal/auth/logout"><i
+                                     class="mdi mdi-power text-danger"></i> Logout</a>
+                         </div>
+                     </div>
+                 </li>
+             </ul>
+             <ul class="list-inline menu-left mb-0">
+                 <li class="float-left"><button class="button-menu-mobile open-left waves-effect"><i
+                             class="mdi mdi-menu"></i></button></li>
+
+             </ul>
+         </nav>
+     </div><!-- Top Bar End -->
+<!-- ========== Left Sidebar Start ========== -->
+<div class="left side-menu">
+    <div class="slimscroll-menu" id="remove-scroll">
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+            <!-- Left Menu Start -->
+            <ul class="metismenu" id="side-menu">
+                                <li><a href="https://datahubindia.tech/portal/dashboard/admin"
+                        class="waves-effect "><i
+                            class="ti-home"></i>
+                        <span>Dashboard</span></a></li>
+                <li><a href="https://datahubindia.tech/portal/dashboard/recent_payment"
+                        class="waves-effect "><i
+                            class="ion ion-md-document"></i>
+                        <span>Recent Payment</span></a>
+                </li>
+                <li><a href="https://datahubindia.tech/portal/copy_paste/add"
+                        class="waves-effect "><i
+                            class="ion ion-md-document"></i>
+                        <span>Copy Paste</span></a>
+                </li>
+                <li><a href="https://datahubindia.tech/portal/redeem"
+                        class="waves-effect "><i
+                            class="ion ion-md-document"></i>
+                        <span>Payment</span></a>
+                                </ul>
+        </div>
+        <!-- Sidebar -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- Sidebar -left -->
+
+</div>
+<!-- Left Sidebar End -->
+<!-- ============================================================== -->
+<!-- Start right Content here -->
+<!-- ============================================================== -->
+<div class="content-page">
+    <!-- Start content -->
+    <div class="content">
+        <div class="container-fluid">
+            <div class="page-title-box">
+                <div class="row align-items-center">
+                    <div class="col-sm-3">
+                        <h4 class="page-title">Dashboard <h5 style="color:red" class="text-center ">NORMAL ID</h5></h4>
+
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="float-right d-md-block">
+                                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->    
+    <div class="row"><div class="col-xl-12 col-md-12"><center><h4 style="color:red">ID Is Deactivate, To Activate Pay 500 Rs On Google Pay, Phone Pe On 8652002516</h4><br><h4 style="color:red">After Paid Amount Send Your Name As Shown Iin Image, Then ID Will Be Activate In 6 Hours<br><img src="https://datahubindia.tech/assets/images/sample.jpeg" alt="" width="200"><br>Helpline No. <a href="tel:9004997349">9004997349</a></h4></center></div></div>
+        <!-- The Modal -->
+    <div class="modal" id="join" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">कंपनी के नियम और शर्तें</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <b>✳️जॉब जॉइनिंग चार्जेस रु.500/- ✳️<br>
+                        (नॉट रिफंडऍबल)<br>
+                        ⏬️<br>
+                        🔶प्रति दिन 100 फॉर्म मिलेगे.<br>
+                        🔶प्रति फॉर्म रु.2/-. <br>
+                        <br>
+                        ▪️आपके वॉलेट मे जमा राशी रु.500/- होने के बाद, आपका COPY PAST का काम रुक जायेगा, फिर आपको वॉलेट
+                        कि जमा राशी के लिये APPLY करणा हे, फिर आपको TOKEN NUMBER दिया जायेगा, जब आपको TOKEN NUMBER आयेगा
+                        तब आपको रु.500/- 1st पेयमेन्ट दिया जायेगा, आपको रु. 500/- 1st पेयमेन्ट देणे के बाद आपका COPY
+                        PAST का काम फिरसे चालू होगा. <br>
+                        <br>
+                        ▪️आपने 2 रेफेर को जॉईन किया तो आपको प्रति दिन 200 फॉर्म मिलगे और प्रति फॉर्म रु. 4/- मिलेगा.
+                        <br>
+                        <br>
+                        ▪️आपके वॉलेट मे जमा राशी रु.5,000/- होने के बाद, आपका COPY PAST का काम रुक जायेगा, फिर आपको
+                        वॉलेट कि जमा राशी के लिये APPLY करणा हे, फिर आपको TOKEN NUMBER दिया जायेगा, जब आपको TOKEN NUMBER
+                        आयेगा तब आपको रु.5,000/- 2nd पेयमेन्ट दिया जायेगा, आपको रु. 5,000/- 2nd पेयमेन्ट देणे के बाद
+                        आपका COPY PAST का काम फिरसे चालू होगा. <br>
+                        <br>
+                        🔸हमारे कंपानी मे काम स्टार्ट करनेसे पहले ये बात का ध्यान दे, कंपनी से पेयमेन्ट लेट मिलता है,
+                        कंपनी कि पॉलिसि, ट्रम्स और कंडिशन हर हफ्ते बदलाव किये जाते है, अगर आप इस बात से सहमत हो तो आप
+                        कंपनी का COPY PAST का काम स्टार्ट करे अन्यथा ना कारे.<br>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="hindi_terms" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">कंपनी के नियम और शर्तें</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <b>नौकरी में शामिल होने का शुल्क रु. 500/- केवल (कोई राशीं वापसी
+                        योग्य नहीं)</b><br>
+                    ■ डेली 100 फॉर्म <br>
+                    ■ प्रति फॉर्म 2 रु <br>
+                    ■ कोई लक्ष्य नहीं <br>
+                    ■ वॉलेट में रु 500/- की राशि पूरी करने के बाद आपका काम बंद हो जाएगा, फिर आपको रु 500/- के  भुगतान के
+                    लिए आवेदन करना होगा, बैंक डिटेल्स देना होगा , 500 राशि मिलने के बाद आपको 3 दिन में रु 500/- राशि मिल
+                    जाएगी आपका काम फिर से शुरू हो जाएगा.<br><br>
+                    ■ घर से काम के लिए 4 दिनों में आपको हमारी कंपनी में 2 लोगों को जॉइन करना होगा<br>
+                    ■ अगर आप 4 दिन में 2 लोगों को जॉईन नहीं करते हैं तो आपकी आईडी डिएक्टिवेट हो जाएगी और आपका काम रुक
+                    जाएगा, लेकिन जब आप 2 लोगों को जॉईन करेंगे तो फिर से आपकी आईडी एक्टिवेट हो जाएगी और आप काम जारी रख
+                    सकते हैं.<br><br>
+                    ■ अगर आप 2 लोगों को जॉईन करते हैं तो आपको नीचे दिये गये बेनिफिट मिलेगा<br>
+                    ■ दैनिक 200 फॉर्म <br>
+                    ■ प्रति फॉर्म 4 रु <br>
+                    ■ कोई लक्ष्य नहीं <br>
+                    ■ वॉलेट में रु.5,000/- की राशि पूरी करने के बाद आपका काम रुक जाएगा। फिर आपको रु.5,000/- के दूसरे
+                    भुगतान के लिए आवेदन करना होगा, बैंक डिटेल्स देना होगा, आपको कामसे कम 7 दिनों में और जादा से जादा 30
+                    दिन मे रु 5,000/- राशि मिलेगी और रु 5,000/- राशि मिलने के बाद आपका काम फिर से शुरू हो जाएगा.<br>
+                    <!-- ■ Fill Wrong Forms ( No Charges )<br> -->
+                    <br>
+                    <b>!!! रेफेर बोनस सिस्टम देखें !!!</b> <br>
+                    ■ हर दिन 20% कमीशन<br>
+                    Ex. <br>
+                    •1 व्यक्ति जॉईंग = प्रतिदिन आपको रु.40/- मासिक रु.1,200/- मिलेंगे <br>
+                    •2 व्यक्ति जॉईंग = प्रतिदिन आपको रु.80/- मिलेंगे  मासिक रु.2,400/- मिलेंगे<br>
+                    •3 व्यक्ति जॉईंग = प्रतिदिन आपको रु.120/-  मिलेंगे मासिक रु.3,200/-  मिलेंगे <br><br>
+
+                    ■ 0 जॉईंग प्रतिदिन 100 फॉर्म - (2 रुपये).<br>
+                    ■ 1 एक्टिव जॉईंग 100 फॉर्म प्रतिदिन - (2 रुपये).<br>
+                    ■ 2 एक्टिव जॉईंग 200 फॉर्म प्रतिदिन - (वी आय पी आय -डी - 4 रुपये).<br>
+                    ■ 3 एक्टिव जॉईंग 300 फॉर्म प्रतिदिन - (वी आय पी आय -डी - 4 रुपये).<br>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="fill_form" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Important Note</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <span style="color:red">Important Note:- Every Week Our Company Changes Policy &
+                        Teams and
+                        Conditions,
+                        So If You Are Comfortable With These, Then Only Join Otherwise Don't Join,
+                        Amount Of Per Form Also Changes Every Week, Sometimes Payment Also Get
+                        Late.</span><br><br>
+                    <span style="color:red">Note:- Company Can Discontinue Any ID User From Work,
+                        Any Time, If Company Feel User Is Not Filling Forms Properly.</span>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="unblock" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Any Changes In Profile</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <span style="color:blue">Any Changes In Profile Charges 100 Rs<br>
+                        1) Name Update<br>
+                        2) Phone Number Update<br>
+                        3) Password Update<br>
+                        4) Refer Change Or Add<br>
+                    </span>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="unblock_wrong_form" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Joining Charges Note</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <span style="color:green">Note:- From Thursday 02-06-2022 Job Joining Charges Will Be 800 Rs.</span>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="terms" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Joining Charges Updates</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    500/- Rs Job Joing Charges Till Sunday 8th May 2022<br>
+                    1,000/- Rs Job Joing Charges From Monday 9th May 2022.<br>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <h4 style="color:green;text-align:center">! Competition Started ! <br> Time Remain : <span style="color: #d5a411;"
+            id="countdown"></span></h4>
+    <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jul 02, 2022 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("countdown").innerHTML = hours + "h " +
+        minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "Loading Forms";
+    }
+}, 1000);
+    </script>
+    <br>
+    <div class="col-12">
+    <div class="card">
+        <div class="card-body table-responsive">
+            <h4 style="color:green;text-align:center"
+                class="text-success animate__animated animate__heartBeat animate__infinite"> *** Today's Winner 🏆 Will
+                Get
+                10,000 Cash *** </h4>
+            <!-- <h4 style="color:red;text-align:center"> *** Today Top Referral Given *** </h4> -->
+            <table class="table table-bordered dt-responsive"
+                style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                <thead>
+                    <tr style="text-align:center">
+                        <th>Name</th>
+                        <th>Referral Given</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                        <tr style="text-align:center">
+                        <td
+                            class="text-success animate__animated animate__heartBeat animate__infinite">
+                            Mujahid Idrisi <br>(EXPECTED WINNER)                        </td>
+                        <td>2</td>
+                    </tr>
+                                        <tr style="text-align:center">
+                        <td
+                            >
+                            Shiv Shavita                         </td>
+                        <td>2</td>
+                    </tr>
+                                        <tr style="text-align:center">
+                        <td
+                            >
+                            NILAM KHAIRNAR                         </td>
+                        <td>2</td>
+                    </tr>
+                                        <tr style="text-align:center">
+                        <td
+                            >
+                            Kishor Ravan                         </td>
+                        <td>2</td>
+                    </tr>
+                                        <tr style="text-align:center">
+                        <td
+                            >
+                            Mayur Gorad                         </td>
+                        <td>2</td>
+                    </tr>
+                                        <tr style="text-align:center">
+                        <td
+                            >
+                            Shahanawaj Nadaf                         </td>
+                        <td>1</td>
+                    </tr>
+                                        <tr style="text-align:center">
+                        <td
+                            >
+                            Namira Khan                         </td>
+                        <td>1</td>
+                    </tr>
+                                        <tr style="text-align:center">
+                        <td
+                            >
+                            Rani Udavant                         </td>
+                        <td>1</td>
+                    </tr>
+                                        <tr style="text-align:center">
+                        <td
+                            >
+                            Naveen Kumar M                         </td>
+                        <td>1</td>
+                    </tr>
+                                        <tr style="text-align:center">
+                        <td
+                            >
+                            Rozina Harchirkar                         </td>
+                        <td>1</td>
+                    </tr>
+                                        <tr style="text-align:center">
+                        <td
+                            >
+                            Dipika Gohil                         </td>
+                        <td>1</td>
+                    </tr>
+                                    </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+        <script>
+// $('#join').on('hidden.bs.modal', function() {
+//     $('#hindi_terms').modal('show');
+// });
+// $('#hindi_terms').on('hidden.bs.modal', function() {
+//     $('#fill_form').modal('show');
+// });
+// $('#fill_form').on('hidden.bs.modal', function() {
+//     $('#unblock').modal('show');
+// });
+// $('#unblock').on('hidden.bs.modal', function() {
+//     $('#unblock_wrong_form').modal('show');
+// });
+// $('#unblock_wrong_form').on('hidden.bs.modal', function() {
+//     $('#terms').modal('show');
+// });
+    </script>
+       <!-- content -->
+   <footer class="footer">Data Hub © 2022.</footer>
+   </div>
+   <!-- ============================================================== -->
+   <!-- End Right content here -->
+   <!-- ============================================================== -->
+   </div>
+   <!-- END wrapper -->
+   <!-- jQuery  -->
+
+   <script src="https://datahubindia.tech/assets/js/bootstrap.bundle.min.js"></script>
+   <script src="https://datahubindia.tech/assets/js/metisMenu.min.js"></script>
+   <script src="https://datahubindia.tech/assets/js/jquery.slimscroll.js"></script>
+   <script src="https://datahubindia.tech/assets/js/waves.min.js"></script>
+
+   <script src="https://datahubindia.tech/assets/js/jquery.validate.min.js"></script>
+   <!-- Required datatable js -->
+   <script src="https://datahubindia.tech/assets/plugins/datatables/jquery.dataTables.min.js"></script>
+   <script src="https://datahubindia.tech/assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+   <!-- Buttons examples -->
+   <script src="https://datahubindia.tech/assets/plugins/datatables/dataTables.buttons.min.js"></script>
+   <script src="https://datahubindia.tech/assets/plugins/datatables/buttons.bootstrap4.min.js"></script>
+   <script src="https://datahubindia.tech/assets/plugins/datatables/jszip.min.js"></script>
+   <script src="https://datahubindia.tech/assets/plugins/datatables/pdfmake.min.js"></script>
+   <script src="https://datahubindia.tech/assets/plugins/datatables/vfs_fonts.js"></script>
+   <script src="https://datahubindia.tech/assets/plugins/datatables/buttons.html5.min.js"></script>
+   <script src="https://datahubindia.tech/assets/plugins/datatables/buttons.print.min.js"></script>
+   <script src="https://datahubindia.tech/assets/plugins/datatables/buttons.colVis.min.js"></script>
+   <!-- Responsive examples -->
+   <script src="https://datahubindia.tech/assets/plugins/datatables/dataTables.responsive.min.js"></script>
+   <script src="https://datahubindia.tech/assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
+   <!-- Datatable init js -->
+   <script src="https://datahubindia.tech/assets/plugins/datatables/datatables.init.js"></script>
+   <!-- App js -->
+   <script src="https://datahubindia.tech/assets/js/bootstrap-datepicker.min.js"></script>
+   <script src="https://datahubindia.tech/assets/js/app.js"></script>
+   <script src="https://datahubindia.tech/assets/js/custom/validation.js"></script>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZB70WJV8N"></script>
+   <script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'G-MZB70WJV8N');
+   </script>
+
+   </body>
+
+   </html>
